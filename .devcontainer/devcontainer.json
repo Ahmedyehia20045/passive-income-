@@ -1,1 +1,7 @@
-{"name": "Passive Income", "dockerComposeFile": "../docker-compose.yml", "service": "pawns", "workspaceFolder": "/workspace"}
+{
+  "name": "Passive Income",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "pawns",
+  "workspaceFolder": "/workspace"
+}
