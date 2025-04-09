@@ -1,0 +1,19 @@
+version: '3'
+services:
+  pawns:
+    image: iproyal/pawns-cli:latest
+    command: -email=yehia0239@gmail.com -password=Ahmedyehia2004 -device-name=Colab_Pawns -device-id=Colab01 -accept-tos
+    restart: always
+  honeygain:
+    image: honeygain/honeygain:latest
+    command: -tou-accept -email=yehia0239@gmail.com -pass=Ahmedyehia2004 -device=Colab_Honeygain
+    restart: always
+  proxyrack:
+    image: proxyrack/pop:latest
+    environment:
+      - UUID=6a9db014-88cb-470a-8888-6cbd21049d20
+    restart: always
+  traffmonetizer:
+    image: traffmonetizer/cli_v2:latest
+    command: start accept --token=UxcCMxY1ZYniGHw4NXEXdSTo01RVqCGvVfNixmt6+/c= --device-name=Colab_Traff
+    restart: always
